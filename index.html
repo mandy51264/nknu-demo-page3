@@ -9,7 +9,19 @@
         <meta name="description" content="一半人生歌詞"> <!-- 提供搜尋引擎關於網頁頁面內的重要資訊-->
         <!-- <link href="style.css" rel="stylesheet">  連結到style.css設定視覺規劃 -->
 
+        <style type="text/css"> </style>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
         <link rel="stylesheet" href="./style.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+          
+        
+
     </head>
 <!-- head標頭資訊設定結束
 ================================================== -->   
@@ -24,6 +36,7 @@
           <li><a href="next.html">Love</a></li>
         </ul>
   </nav>  
+
   <!-- nav導覽列設定結束--> 
     </header>
     	<!-- main內文設定開始--> 
@@ -46,6 +59,7 @@
         黃昏的地平線，割斷幸福喜悅<br>
         相愛已經幻滅<br>
         <p></p>
+        
 	<!-- a 超連結設定，需搭配href，target="_blank開啟新視窗--> 
 	<a href="https://www.youtube.com/watch?v=6ca_YHZvzls" target="_blank">聽歌去</a>  
     </main>
@@ -56,4 +70,15 @@
         <p class="copyright"><small>&copy; Copyright 2023 homework，本網站為作業之用，如有侵權敬請告知</small></p>
         </footer>
     <!-- footer頁尾設定結束-->
+    <script>  //<!--加入 jQuary淡入語法-->
+        $(function () {
+            $("main").hide();
+            $("main").fadeIn(2000);
+        });
+</script>
+
+<script>  //<!--加入 jQuary tabs語法-->
+    $(function () {
+        $("#tabs").tabs();
+    });
 </body>
